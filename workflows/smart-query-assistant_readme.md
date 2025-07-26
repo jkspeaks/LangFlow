@@ -49,9 +49,6 @@ The workflow consists of three main components:
    - Open LangFlow interface
    - Click "Import" or "Load Flow"
    - Select the `smart-query-assistant.json` file
-3. **Configure API Keys**:
-   - Set your OpenAI API key in the LLM components
-   - Configure any additional service credentials
 
 ### Setup Instructions
 
@@ -62,8 +59,8 @@ The workflow consists of three main components:
    ```
 
 2. **Configure Components**:
-   - Update LLM model settings (GPT-4 recommended)
-   - Set temperature to 0.3 for consistent responses
+   - Ensure Ollama is running
+   - Set temperature to 0.1 for consistent responses
    - Configure memory component for conversation context
 
 3. **Test the Flow**:
@@ -140,7 +137,7 @@ Assistant: Here's a comparison:
 ### Common Issues
 
 **Flow doesn't start**:
-- Check API key configuration
+- Check Ollama is running. If you replaced this component to use OpenAI, ensure the API keys are working
 - Verify all components are connected
 - Ensure required packages are installed
 
@@ -180,13 +177,6 @@ This workflow is provided under the MIT License. Feel free to modify and distrib
 - **Issues**: Report problems via GitHub issues
 - **Questions**: Ask in LangFlow community forums
 - **Feature Requests**: Suggest improvements through issues
-
-## 🔄 Version History
-
-- **v1.0**: Initial release with basic query classification
-- **v1.1**: Added calculator and datetime tools
-- **v1.2**: Enhanced conversation memory
-- **v1.3**: Improved response templates and formatting
 
 ---
 
