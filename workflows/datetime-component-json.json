@@ -1,0 +1,20 @@
+{
+    "label": "DateTime Query Component",
+    "name": "datetime_component",
+    "type": "datetime_component",
+    "icon": "Clock",
+    "category": "Utility",
+    "description": "A component for handling time-related queries",
+    "base_classes": ["DateTimeComponent"],
+    "module": "datetime_component",
+    "input_types": ["str"],
+    "output_types": ["dict"],
+    "parameters": [
+        {
+            "name": "timezone",
+            "type": "str",
+            "default": "UTC",
+            "placeholder": "Enter timezone (e.g., 'US/Eastern')"
+        }
+    ]
+}
