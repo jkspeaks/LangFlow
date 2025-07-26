@@ -6,8 +6,8 @@ A collection of production-ready LangFlow workflows for various AI applications,
 
 1. **Install LangFlow**:
    ```bash
-   pip install langflow
-   langflow run
+   uv pip install langflow
+   uv run langflow run
    ```
 
 2. **Import a Workflow**:
